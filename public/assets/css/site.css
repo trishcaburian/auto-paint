@@ -55,7 +55,6 @@ h4{
 	border-bottom: 2px solid black;
 }
 
-/*for later*/
 .active-site{
 	color: black;
 	border-bottom: 2px solid black;
@@ -139,7 +138,6 @@ select{
 }
 
 .submit-button {
-  background-color: #dd695f;
   border: none;
   color: white;
   padding: 10px 65px;
@@ -149,6 +147,14 @@ select{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.enabled {
+	background-color: #dd695f;
+}
+
+.disabled {
+	background-color: #e0e0e0;
 }
 
 /* Paint Jobs */
