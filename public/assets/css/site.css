@@ -199,7 +199,8 @@ th,td{
 
 .stats-box{
 	background-color: #e0e0e0;
-	padding: 20px 15px;
+	padding: 15px;
+	line-height: 1.5em;
 }
 
 .stat-num{
