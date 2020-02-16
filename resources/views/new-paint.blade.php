@@ -23,25 +23,23 @@
   			}
 		}
 
+		function changeColor(id, other){
+			var color = $('#'+id+'-color').val();
+  			$('#'+id+'-car').removeAttr('class');
+  			$('#'+id+'-car').addClass(color.toLowerCase()+'-color car');
+
+  			var compare = $('#'+other+'-color').val();
+
+  			compareColors(color, compare);
+		}
+
 		$(document).ready(function(){
 			$('#current-color').change(function(){
-				var color = $('#current-color').val();
-  				$('#current-car').removeAttr('class');
-  				$('#current-car').addClass(color.toLowerCase()+'-color car');
-
-  				var compare = $('#target-color').val();
-
-  				compareColors(color, compare);
+  				changeColor('current', 'target');
   			});
 
   			$('#target-color').change(function(){
-				var color = $('#target-color').val();
-  				$('#target-car').removeAttr('class');
-  				$('#target-car').addClass(color.toLowerCase()+'-color car');
-
-  				var compare = $('#current-color').val();
-
-  				compareColors(color, compare);
+  				changeColor('target', 'current');
   			});
   		});
 	</script>
